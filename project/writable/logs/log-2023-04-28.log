@@ -1,0 +1,337 @@
+ERROR - 2023-04-28 01:11:46 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-28 01:11:46 --> Invalid email address: ""
+220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Fri, 28 Apr 2023 11:11:46 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-fede5d4f.zones.eait.uq.edu.au [172.23.81.8], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+from: 250 2.1.0 <yueqi.wang@uqconnect.edu.au>... Sender ok
+
+to: 553 5.0.0 <>... User address required
+
+The following SMTP error was encountered: 553 5.0.0 <>... User address required
+
+quit: 221 2.0.0 mailhub.eait.uq.edu.au closing connection
+
+ERROR - 2023-04-28 01:11:57 --> mysqli_sql_exception: Duplicate entry '' for key 'Users.PRIMARY' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(66): App\Models\Upload->sign_up()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-28 01:11:57 --> Duplicate entry '' for key 'Users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(66): App\Models\Upload->sign_up()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-28 01:11:59 --> mysqli_sql_exception: Duplicate entry '' for key 'Users.PRIMARY' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(66): App\Models\Upload->sign_up()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-28 01:11:59 --> Duplicate entry '' for key 'Users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(66): App\Models\Upload->sign_up()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-28 01:12:06 --> mysqli_sql_exception: Duplicate entry '' for key 'Users.PRIMARY' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(66): App\Models\Upload->sign_up()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-28 01:12:06 --> Duplicate entry '' for key 'Users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(66): App\Models\Upload->sign_up()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-28 01:12:17 --> mysqli_sql_exception: Duplicate entry '' for key 'Users.PRIMARY' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(66): App\Models\Upload->sign_up()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-28 01:12:17 --> Duplicate entry '' for key 'Users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(66): App\Models\Upload->sign_up()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-28 01:12:35 --> mysqli_sql_exception: Duplicate entry '' for key 'Users.PRIMARY' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(66): App\Models\Upload->sign_up()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-28 01:12:35 --> Duplicate entry '' for key 'Users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(66): App\Models\Upload->sign_up()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-28 01:38:46 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-28 01:38:46 --> Invalid email address: ""
+220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Fri, 28 Apr 2023 11:38:46 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-fede5d4f.zones.eait.uq.edu.au [172.23.81.8], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+from: 250 2.1.0 <yueqi.wang@uqconnect.edu.au>... Sender ok
+
+to: 553 5.0.0 <>... User address required
+
+The following SMTP error was encountered: 553 5.0.0 <>... User address required
+
+quit: 221 2.0.0 mailhub.eait.uq.edu.au closing connection
+
+ERROR - 2023-04-28 01:39:25 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-28 01:39:25 --> Invalid email address: ""
+220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Fri, 28 Apr 2023 11:39:25 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-fede5d4f.zones.eait.uq.edu.au [172.23.81.8], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+from: 250 2.1.0 <yueqi.wang@uqconnect.edu.au>... Sender ok
+
+to: 553 5.0.0 <>... User address required
+
+The following SMTP error was encountered: 553 5.0.0 <>... User address required
+
+quit: 221 2.0.0 mailhub.eait.uq.edu.au closing connection
+
+ERROR - 2023-04-28 01:39:27 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-28 01:39:27 --> Invalid email address: ""
+220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Fri, 28 Apr 2023 11:39:27 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-fede5d4f.zones.eait.uq.edu.au [172.23.81.8], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+from: 250 2.1.0 <yueqi.wang@uqconnect.edu.au>... Sender ok
+
+to: 553 5.0.0 <>... User address required
+
+The following SMTP error was encountered: 553 5.0.0 <>... User address required
+
+quit: 221 2.0.0 mailhub.eait.uq.edu.au closing connection
+
+ERROR - 2023-04-28 01:40:03 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-28 01:40:03 --> Invalid email address: ""
+220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Fri, 28 Apr 2023 11:40:03 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-fede5d4f.zones.eait.uq.edu.au [172.23.81.8], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+from: 250 2.1.0 <yueqi.wang@uqconnect.edu.au>... Sender ok
+
+to: 553 5.0.0 <>... User address required
+
+The following SMTP error was encountered: 553 5.0.0 <>... User address required
+
+quit: 221 2.0.0 mailhub.eait.uq.edu.au closing connection
+
+ERROR - 2023-04-28 01:40:43 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-28 01:40:43 --> Invalid email address: ""
+220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Fri, 28 Apr 2023 11:40:43 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-fede5d4f.zones.eait.uq.edu.au [172.23.81.8], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+from: 250 2.1.0 <yueqi.wang@uqconnect.edu.au>... Sender ok
+
+to: 553 5.0.0 <>... User address required
+
+The following SMTP error was encountered: 553 5.0.0 <>... User address required
+
+quit: 221 2.0.0 mailhub.eait.uq.edu.au closing connection
+
+ERROR - 2023-04-28 01:40:45 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-28 01:40:45 --> Invalid email address: ""
+220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Fri, 28 Apr 2023 11:40:45 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-fede5d4f.zones.eait.uq.edu.au [172.23.81.8], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+from: 250 2.1.0 <yueqi.wang@uqconnect.edu.au>... Sender ok
+
+to: 553 5.0.0 <>... User address required
+
+The following SMTP error was encountered: 553 5.0.0 <>... User address required
+
+quit: 221 2.0.0 mailhub.eait.uq.edu.au closing connection
+
+ERROR - 2023-04-28 01:41:06 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-28 01:41:06 --> 220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Fri, 28 Apr 2023 11:41:00 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-fede5d4f.zones.eait.uq.edu.au [172.23.81.8], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+from: 250 2.1.0 <yueqi.wang@uqconnect.edu.au>... Sender ok
+
+to: 250 2.1.5 <923944641@qq.com>... Recipient ok
+
+data: 354 Enter mail, end with "." on a line by itself
+
+
+quit: 250 2.0.0 33S1f01j029631 Message accepted for delivery
+
+The following SMTP error was encountered: 250 2.0.0 33S1f01j029631 Message accepted for delivery
+
+The following SMTP error was encountered: 
+CRITICAL - 2023-04-28 01:54:07 --> Undefined variable $allCourses
+in APPPATH/Views/profile.php on line 29.
+ 1 APPPATH/Views/profile.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(148): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-28 02:55:55 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH/Controllers/Login.php on line 219.
+ 1 APPPATH/Controllers/Login.php(219): count()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->upload_file()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-28 07:21:49 --> Trying to access array offset on value of type null
+in APPPATH/Views/profile.php on line 6.
+ 1 APPPATH/Views/profile.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(118): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->profile()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-28 07:38:40 --> Trying to access array offset on value of type null
+in APPPATH/Views/profile.php on line 6.
+ 1 APPPATH/Views/profile.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(118): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->profile()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
