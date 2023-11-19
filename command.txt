@@ -1,0 +1,52 @@
+# Command in both manager and workers to get the project
+# Download docker in the node
+sudo apt-get update && sudo apt-get install -y docker.io
+
+# Get the zip project from my GitHub
+wget https://raw.githubusercontent.com/YokiiW/discussion-platform/main/project.zip
+
+# Install unzip and unzip the project
+sudo apt install unzip && unzip project.zip
+# Remove the project
+rm project.zip
+
+# Give permissions
+sudo chmod -R 777 demo
+
+
+
+
+# Create a swarm and initial the manager node
+sudo docker swarm init --advertise-addr $(hostname -i)
+
+# Join the swarm as workers(replace with your token)
+sudo docker swarm join --token SWMTKN-1-0bnjqow4xe5qrebeiodm8hx5s8crzbpncd6m024qqyyqdbc8o5-8yjob52okqka43qzlr0vzspaq 10.128.0.8:2377
+
+# Deploy the docker-compose script
+sudo docker stack deploy -c docker-compose.yml my-project
+
+# Check the service
+sudo docker service ls
+
+# Check the running status
+sudo docker stack ps my-project -f desired-state=running
+
+# Rollout and rollback
+sudo docker service update --image nginx:1.25 my-project_mynginx
+sudo docker service rollback my-project_mynginx
+
+# Scalability and reliability
+sudo docker service scale my-project_mysql=3
+
+
+
+
+
+# Login info to my discussion platform
+Link: http://ip_address:8080/project/login
+Username: yueqi
+Password: q123456789W
+
+# Link to my git repository
+https://github.com/YokiiW/discussion-platform
+
