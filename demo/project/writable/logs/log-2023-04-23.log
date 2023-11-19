@@ -1,0 +1,655 @@
+CRITICAL - 2023-04-23 09:35:28 --> Call to a member function setToken() on null
+in APPPATH/Controllers/Reset.php on line 27.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reset->forgot_password()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 10:26:13 --> Call to undefined function App\Models\get()
+in APPPATH/Models/Reset_model.php on line 34.
+ 1 APPPATH/Controllers/Reset.php(61): App\Models\Reset->getEmailByToken()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reset->verify_token()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 10:27:07 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$getRow
+in APPPATH/Models/Reset_model.php on line 37.
+ 1 APPPATH/Models/Reset_model.php(37): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Reset.php(61): App\Models\Reset->getEmailByToken()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reset->verify_token()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 10:28:06 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH/Models/Reset_model.php on line 40.
+ 1 APPPATH/Controllers/Reset.php(61): App\Models\Reset->getEmailByToken()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reset->verify_token()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 10:37:29 --> Cannot use object of type stdClass as array
+in APPPATH/Models/Reset_model.php on line 40.
+ 1 APPPATH/Controllers/Reset.php(61): App\Models\Reset->getEmailByToken()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reset->verify_token()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 10:37:47 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH/Models/Reset_model.php on line 40.
+ 1 APPPATH/Controllers/Reset.php(61): App\Models\Reset->getEmailByToken()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reset->verify_token()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 10:40:37 --> Cannot use object of type stdClass as array
+in APPPATH/Models/Reset_model.php on line 40.
+ 1 APPPATH/Controllers/Reset.php(61): App\Models\Reset->getEmailByToken()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reset->verify_token()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 13:03:02 --> Attempt to read property "password" on array
+in APPPATH/Models/User_model.php on line 16.
+ 1 APPPATH/Models/User_model.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Login.php(31): APP\Models\User_model->login()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 13:08:36 --> mysqli_sql_exception: Duplicate entry 'yoki' for key 'Users.PRIMARY' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(23): App\Models\Upload->sign_up()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-23 13:08:36 --> Duplicate entry 'yoki' for key 'Users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(23): App\Models\Upload->sign_up()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 13:24:21 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-23 13:24:21 --> Invalid email address: ""
+220 mailhub.eait.uq.edu.au ESMTP Sendmail 8.15.1/8.15.1; Sun, 23 Apr 2023 23:24:21 +1000 (AEST)
+
+hello: 250-mailhub.eait.uq.edu.au Hello infs3202-fede5d4f.zones.eait.uq.edu.au [172.23.81.8], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE 67108864
+250-DSN
+250-ETRN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+from: 250 2.1.0 <yueqi.wang@uqconnect.edu.au>... Sender ok
+
+to: 553 5.0.0 <>... User address required
+
+The following SMTP error was encountered: 553 5.0.0 <>... User address required
+
+quit: 221 2.0.0 mailhub.eait.uq.edu.au closing connection
+
+CRITICAL - 2023-04-23 13:24:49 --> Undefined variable $invalid
+in APPPATH/Views/sign_up.php on line 4.
+ 1 APPPATH/Views/sign_up.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/sign_up.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sign_up.php(14): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 13:24:51 --> Undefined variable $invalid
+in APPPATH/Views/sign_up.php on line 4.
+ 1 APPPATH/Views/sign_up.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/sign_up.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sign_up.php(14): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 13:24:58 --> Undefined variable $invalid
+in APPPATH/Views/sign_up.php on line 4.
+ 1 APPPATH/Views/sign_up.php(4): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/sign_up.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sign_up.php(14): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 13:26:26 --> mysqli_sql_exception: Duplicate entry 'a' for key 'Users.PRIMARY' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-23 13:26:26 --> Duplicate entry 'a' for key 'Users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 13:28:58 --> mysqli_sql_exception: Column 'name' cannot be null in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-23 13:28:58 --> Column 'name' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 13:29:20 --> mysqli_sql_exception: Duplicate entry 'a' for key 'Users.PRIMARY' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-23 13:29:20 --> Duplicate entry 'a' for key 'Users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 13:29:27 --> mysqli_sql_exception: Duplicate entry 'a' for key 'Users.PRIMARY' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-23 13:29:27 --> Duplicate entry 'a' for key 'Users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 13:31:38 --> Undefined property: App\Controllers\Sign_up::$load
+in APPPATH/Controllers/Sign_up.php on line 27.
+ 1 APPPATH/Controllers/Sign_up.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 13:32:57 --> mysqli_sql_exception: Duplicate entry 'a' for key 'Users.PRIMARY' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-23 13:32:57 --> Duplicate entry 'a' for key 'Users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 13:33:10 --> mysqli_sql_exception: Duplicate entry '' for key 'Users.email' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-23 13:33:10 --> Duplicate entry '' for key 'Users.email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 13:33:12 --> mysqli_sql_exception: Duplicate entry '' for key 'Users.email' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-23 13:33:12 --> Duplicate entry '' for key 'Users.email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 13:33:13 --> mysqli_sql_exception: Duplicate entry '' for key 'Users.email' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-23 13:33:13 --> Duplicate entry '' for key 'Users.email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 13:33:15 --> mysqli_sql_exception: Duplicate entry 'a' for key 'Users.PRIMARY' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-23 13:33:15 --> Duplicate entry 'a' for key 'Users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 13:33:18 --> mysqli_sql_exception: Duplicate entry 'a' for key 'Users.PRIMARY' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-23 13:33:18 --> Duplicate entry 'a' for key 'Users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 13:33:20 --> mysqli_sql_exception: Duplicate entry 'a' for key 'Users.PRIMARY' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-23 13:33:20 --> Duplicate entry 'a' for key 'Users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-23 13:33:23 --> mysqli_sql_exception: Duplicate entry 'a' for key 'Users.PRIMARY' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-23 13:33:23 --> Duplicate entry 'a' for key 'Users.PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(38): App\Models\Upload->sign_up()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 14:08:22 --> "retuired" is not a valid rule.
+in SYSTEMPATH/Validation/Validation.php on line 320.
+ 1 SYSTEMPATH/Validation/Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+ 2 SYSTEMPATH/Validation/Validation.php(170): CodeIgniter\Validation\Validation->processRules()
+ 3 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH/Controllers/Sign_up.php(51): CodeIgniter\Controller->validate()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 14:27:00 --> Array to string conversion
+in APPPATH/Views/sign_up.php on line 5.
+ 1 APPPATH/Views/sign_up.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/sign_up.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Sign_up.php(54): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 15:03:02 --> Undefined variable $verificationCode
+in APPPATH/Views/email_verification.php on line 7.
+ 1 APPPATH/Views/email_verification.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/email_verification.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Verification.php(34): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Verification->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 15:13:53 --> Undefined variable $isButtonDisabled
+in APPPATH/Views/email_verification.php on line 7.
+ 1 APPPATH/Views/email_verification.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/email_verification.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Verification.php(57): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Verification->verify()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 15:14:01 --> Undefined variable $isButtonDisabled
+in APPPATH/Views/email_verification.php on line 7.
+ 1 APPPATH/Views/email_verification.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/email_verification.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Verification.php(57): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Verification->verify()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 15:15:01 --> Undefined variable $isButtonDisabled
+in APPPATH/Views/email_verification.php on line 7.
+ 1 APPPATH/Views/email_verification.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/email_verification.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Verification.php(34): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Verification->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 15:18:32 --> Undefined variable $isButtonDisabled
+in APPPATH/Views/email_verification.php on line 7.
+ 1 APPPATH/Views/email_verification.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/email_verification.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Verification.php(34): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Verification->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 15:18:35 --> Undefined variable $isButtonDisabled
+in APPPATH/Views/email_verification.php on line 7.
+ 1 APPPATH/Views/email_verification.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/email_verification.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Verification.php(34): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Verification->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 15:18:36 --> Undefined variable $isButtonDisabled
+in APPPATH/Views/email_verification.php on line 7.
+ 1 APPPATH/Views/email_verification.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/email_verification.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Verification.php(34): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Verification->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 15:18:37 --> Undefined variable $isButtonDisabled
+in APPPATH/Views/email_verification.php on line 7.
+ 1 APPPATH/Views/email_verification.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/email_verification.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Verification.php(34): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Verification->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 15:20:02 --> Undefined variable $isButtonDisabled
+in APPPATH/Views/email_verification.php on line 7.
+ 1 APPPATH/Views/email_verification.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/email_verification.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Verification.php(34): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Verification->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 15:22:33 --> Undefined variable $isButtonDisabled
+in APPPATH/Views/email_verification.php on line 7.
+ 1 APPPATH/Views/email_verification.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/email_verification.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Verification.php(34): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Verification->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 15:24:31 --> Undefined variable $isButtonDisabled
+in APPPATH/Views/email_verification.php on line 8.
+ 1 APPPATH/Views/email_verification.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/email_verification.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Verification.php(34): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Verification->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 15:50:37 --> Request URI segment is out of range: "3"
+in SYSTEMPATH/HTTP/URI.php on line 549.
+ 1 SYSTEMPATH/HTTP/URI.php(549): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange()
+ 2 APPPATH/Controllers/Reset.php(80): CodeIgniter\HTTP\URI->getSegment()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reset->reset_password()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 15:50:55 --> Request URI segment is out of range: "3"
+in SYSTEMPATH/HTTP/URI.php on line 549.
+ 1 SYSTEMPATH/HTTP/URI.php(549): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange()
+ 2 APPPATH/Controllers/Reset.php(80): CodeIgniter\HTTP\URI->getSegment()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reset->reset_password()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 15:57:04 --> Request URI segment is out of range: "3"
+in SYSTEMPATH/HTTP/URI.php on line 549.
+ 1 SYSTEMPATH/HTTP/URI.php(549): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange()
+ 2 APPPATH/Controllers/Reset.php(80): CodeIgniter\HTTP\URI->getSegment()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reset->reset_password()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 15:58:10 --> Undefined variable $newPassword
+in APPPATH/Models/Reset_model.php on line 49.
+ 1 APPPATH/Models/Reset_model.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Reset.php(85): App\Models\Reset->resetPassword()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reset->reset_password()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 16:23:37 --> Request URI segment is out of range: "3"
+in SYSTEMPATH/HTTP/URI.php on line 549.
+ 1 SYSTEMPATH/HTTP/URI.php(549): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange()
+ 2 APPPATH/Controllers/Reset.php(98): CodeIgniter\HTTP\URI->getSegment()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reset->reset_password()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 16:25:11 --> Request URI segment is out of range: "3"
+in SYSTEMPATH/HTTP/URI.php on line 549.
+ 1 SYSTEMPATH/HTTP/URI.php(549): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange()
+ 2 APPPATH/Controllers/Reset.php(98): CodeIgniter\HTTP\URI->getSegment()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reset->reset_password()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 16:32:20 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH/Database/Query.php on line 335.
+ 1 SYSTEMPATH/Database/Query.php(335): strtr()
+ 2 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds()
+ 3 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/Reset_model.php(53): CodeIgniter\Database\BaseBuilder->update()
+ 7 APPPATH/Controllers/Reset.php(103): App\Models\Reset->resetPassword()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reset->reset_password()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 16:35:45 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH/Database/Query.php on line 335.
+ 1 SYSTEMPATH/Database/Query.php(335): strtr()
+ 2 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds()
+ 3 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/Reset_model.php(56): CodeIgniter\Database\BaseBuilder->update()
+ 7 APPPATH/Controllers/Reset.php(103): App\Models\Reset->resetPassword()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reset->reset_password()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 16:39:09 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH/Database/Query.php on line 335.
+ 1 SYSTEMPATH/Database/Query.php(335): strtr()
+ 2 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds()
+ 3 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/Reset_model.php(53): CodeIgniter\Database\BaseBuilder->update()
+ 7 APPPATH/Controllers/Reset.php(103): App\Models\Reset->resetPassword()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reset->reset_password()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 16:41:00 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH/Database/Query.php on line 335.
+ 1 SYSTEMPATH/Database/Query.php(335): strtr()
+ 2 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds()
+ 3 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Models/Reset_model.php(53): CodeIgniter\Database\BaseBuilder->update()
+ 7 APPPATH/Controllers/Reset.php(103): App\Models\Reset->resetPassword()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reset->reset_password()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-23 17:17:53 --> Undefined array key "username"
+in APPPATH/Controllers/Login.php on line 91.
+ 1 APPPATH/Controllers/Login.php(91): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->profile()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

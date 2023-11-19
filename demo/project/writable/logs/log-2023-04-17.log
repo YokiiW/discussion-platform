@@ -1,0 +1,463 @@
+ERROR - 2023-04-17 09:25:45 --> mysqli_sql_exception: Table 'demo.Users' doesn't exist in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(19): App\Models\Upload->create_user()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-17 09:25:45 --> Table 'demo.Users' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(19): App\Models\Upload->create_user()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 09:26:44 --> mysqli_sql_exception: Column 'name' cannot be null in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(19): App\Models\Upload->create_user()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-17 09:26:44 --> Column 'name' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(19): App\Models\Upload->create_user()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 09:27:12 --> mysqli_sql_exception: Column 'name' cannot be null in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(19): App\Models\Upload->create_user()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-17 09:27:12 --> Column 'name' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(19): App\Models\Upload->create_user()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 09:28:41 --> mysqli_sql_exception: Column 'password' cannot be null in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/project/app/Controllers/Sign_up.php(19): App\Models\Upload->create_user()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-17 09:28:41 --> Column 'password' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Sign_up_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Sign_up.php(19): App\Models\Upload->create_user()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Sign_up->check_sign_up()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 11:05:21 --> Too few arguments to function App\Controllers\Login::profile(), 0 passed in /var/www/htdocs/project/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Login.php on line 85.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->profile()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 11:07:52 --> Too few arguments to function App\Controllers\Login::profile(), 0 passed in /var/www/htdocs/project/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Login.php on line 85.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->profile()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 11:07:54 --> Too few arguments to function App\Controllers\Login::profile(), 0 passed in /var/www/htdocs/project/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Login.php on line 85.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->profile()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 11:07:54 --> Too few arguments to function App\Controllers\Login::profile(), 0 passed in /var/www/htdocs/project/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Login.php on line 85.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->profile()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 11:08:01 --> Too few arguments to function App\Controllers\Login::profile(), 0 passed in /var/www/htdocs/project/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Login.php on line 85.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->profile()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 11:08:46 --> Undefined property: App\Controllers\Login::$user_model
+in APPPATH/Controllers/Login.php on line 88.
+ 1 APPPATH/Controllers/Login.php(88): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->profile()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 11:08:47 --> Undefined property: App\Controllers\Login::$user_model
+in APPPATH/Controllers/Login.php on line 88.
+ 1 APPPATH/Controllers/Login.php(88): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->profile()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:06:16 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH/Controllers/Login.php on line 98.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 13:11:28 --> mysqli_sql_exception: Unknown column 'Users' in 'field list' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+#5 /var/www/htdocs/project/app/Controllers/Login.php(105): APP\Models\User_model->updateUserProfile()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-17 13:11:28 --> Unknown column 'Users' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Login.php(105): APP\Models\User_model->updateUserProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 13:29:55 --> mysqli_sql_exception: Unknown column 'Users' in 'field list' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+#5 /var/www/htdocs/project/app/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-17 13:29:55 --> Unknown column 'Users' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 13:30:01 --> mysqli_sql_exception: Unknown column 'Users' in 'field list' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+#5 /var/www/htdocs/project/app/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-17 13:30:01 --> Unknown column 'Users' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 13:31:04 --> mysqli_sql_exception: Unknown column 'Users' in 'field list' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+#5 /var/www/htdocs/project/app/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-17 13:31:04 --> Unknown column 'Users' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 13:35:29 --> mysqli_sql_exception: Unknown column 'Users' in 'field list' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+#5 /var/www/htdocs/project/app/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-17 13:35:29 --> Unknown column 'Users' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 13:35:33 --> mysqli_sql_exception: Unknown column 'Users' in 'field list' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+#5 /var/www/htdocs/project/app/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-17 13:35:33 --> Unknown column 'Users' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 13:35:46 --> mysqli_sql_exception: Unknown column 'Users' in 'field list' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+#5 /var/www/htdocs/project/app/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-17 13:35:46 --> Unknown column 'Users' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 13:35:49 --> mysqli_sql_exception: Unknown column 'Users' in 'field list' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+#5 /var/www/htdocs/project/app/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-17 13:35:49 --> Unknown column 'Users' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 13:36:20 --> mysqli_sql_exception: Unknown column 'Users' in 'field list' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+#5 /var/www/htdocs/project/app/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-17 13:36:20 --> Unknown column 'Users' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 13:48:16 --> mysqli_sql_exception: Unknown column 'users' in 'field list' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+#5 /var/www/htdocs/project/app/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-17 13:48:16 --> Unknown column 'users' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 13:48:46 --> mysqli_sql_exception: Unknown column 'Users' in 'field list' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+#5 /var/www/htdocs/project/app/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-17 13:48:46 --> Unknown column 'Users' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:56:20 --> CodeIgniter\Database\BaseBuilder::insert(): Argument #2 ($escape) must be of type ?bool, array given, called in /var/www/htdocs/project/app/Models/User_model.php on line 43
+in SYSTEMPATH/Database/BaseBuilder.php on line 2285.
+ 1 APPPATH/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->insert()
+ 2 APPPATH/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-17 13:56:58 --> mysqli_sql_exception: Unknown column 'Users' in 'field list' in /var/www/htdocs/project/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/project/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/project/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/project/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/project/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/project/app/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+#5 /var/www/htdocs/project/app/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+#6 /var/www/htdocs/project/system/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+#7 /var/www/htdocs/project/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/project/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/project/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-17 13:56:58 --> Unknown column 'Users' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/User_model.php(43): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/Login.php(104): APP\Models\User_model->updateUserProfile()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 13:58:23 --> The route for "user/profile" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+ 2 SYSTEMPATH/Common.php(880): CodeIgniter\HTTP\RedirectResponse->route()
+ 3 APPPATH/Controllers/Login.php(107): redirect()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->update_profile()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 14:04:49 --> Trying to access array offset on value of type null
+in APPPATH/Views/profile.php on line 6.
+ 1 APPPATH/Views/profile.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(92): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->profile()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 16:10:59 --> Trying to access array offset on value of type null
+in APPPATH/Views/profile.php on line 6.
+ 1 APPPATH/Views/profile.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(92): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->profile()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 16:11:07 --> Trying to access array offset on value of type null
+in APPPATH/Views/profile.php on line 6.
+ 1 APPPATH/Views/profile.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(92): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->profile()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-17 16:11:08 --> Trying to access array offset on value of type null
+in APPPATH/Views/profile.php on line 6.
+ 1 APPPATH/Views/profile.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Login.php(92): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->profile()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
