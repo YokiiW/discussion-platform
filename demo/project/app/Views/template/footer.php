@@ -223,7 +223,7 @@
 										commentAlert.classList.add('alert-success');
 										commentAlert.classList.remove('alert-danger');
 										commentAlert.classList.remove('hidden-part');
-										loadComment();
+										loadContent();
 									} else if (response.error) {
 										commentAlert.innerHTML = "Comment failed! Please try again";
 										commentAlert.classList.remove('alert-success');
